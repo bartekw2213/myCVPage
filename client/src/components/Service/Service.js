@@ -57,27 +57,27 @@ const Service = () => {
           czy może ona ulec zmianie w trakcie tworzenia strony?
         </p>
         <p className={`${classes.ChatMsg} ${classes.Answer}`}>
+          Cena zależy od tego jak duża ma być strona i jakie są indywidualne
+          oczekiwania klienta wobec niej. Wycena strony zostaje zrobiona na
+          początku i nie ulega zmianie do samego końca
+        </p>
+        <p className={`${classes.ChatMsg} ${classes.Question}`}>
           Jak można się skontaktować w celu omówienia współpracy? Jak długo będę
           czekać na odpowiedź?
         </p>
-        <p className={`${classes.ChatMsg} ${classes.Question}`}>
+        <p className={`${classes.ChatMsg} ${classes.Answer}`}>
           W celu kontaktu proszę o skorzystanie z zakładki Kontakt u góry
           strony. Odpowiedź zostanie nadana w przeciągu najbliższych paru
           godzin.
         </p>
-        <p className={`${classes.ChatMsg} ${classes.Answer}`}>
+        <p className={`${classes.ChatMsg} ${classes.Question}`}>
           Czy będę mieć wpływ na ostateczny wygląd strony oraz czy nie będzie
           ona sztywnym szablonem?
         </p>
-        <p className={`${classes.ChatMsg} ${classes.Question}`}>
-          Przed rozpoczęciem pracy konsultuje z klientem jak on chce by strona
+        <p className={`${classes.ChatMsg} ${classes.Answer}`}>
+          Przed rozpoczęciem pracy konsultuję z klientem jak on chce by strona
           ostatecznie wyglądała . Każda witryna jest tworzona indywidualnie pod
           kupującego
-        </p>
-        <p className={`${classes.ChatMsg} ${classes.Answer}`}>
-          Cena zależy od tego jak duża ma być strona i jakie są indywidualne
-          oczekiwania klienta wobec niej. Wycena strony zostaje zrobiona na
-          początku i nie ulega zmianie do samego końca.
         </p>
         <p className={`${classes.ChatMsg} ${classes.Question}`}>
           Czy jest możliwość zaprojektowanie grafik / loga? Czy można zamówić to
