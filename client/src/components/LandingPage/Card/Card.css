@@ -1,0 +1,176 @@
+.Card {
+  background-color: var(--dark-purple);
+  padding: 2rem 1rem;
+  box-shadow: var(--big-shadow);
+}
+
+.Card .CardTitle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.CardTitle i {
+  color: #3c9e36;
+  font-size: 96px;
+}
+
+.CardTitleHeaders {
+  margin-left: 1rem;
+}
+
+.CardTitleHeaders h1 {
+  width: 220px;
+  margin: 0;
+}
+
+.CardTitleHeaders h1:nth-child(2) {
+  text-align: right;
+}
+
+.CardTitleHeaders h1:nth-child(3) {
+  text-align: center;
+}
+
+.Card li {
+  font-size: 26px;
+  margin: 1rem 0;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.Card li::before {
+  content: '';
+  height: 20px;
+  width: 20px;
+  background-color: var(--light-purple);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.Card li i {
+  margin-left: 0.5rem;
+}
+
+.Card button {
+  background-color: var(--yellow);
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  box-shadow: var(--button-shadow);
+  margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: 2rem;
+  display: block;
+}
+
+.CardTitleForTablet {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .Card {
+    margin: 1rem 0 0;
+    padding: 1rem 2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .CardTitleForTablet {
+    display: block;
+  }
+
+  .Card .CardTitle.DisableForTablet,
+  .DisableForTablet {
+    display: none;
+  }
+
+  .CardTitleHeaders {
+    margin-left: 0.5rem;
+  }
+
+  .CardTitleHeaders h1 {
+    width: 180px;
+  }
+
+  .CardTitle i {
+    font-size: 67px;
+  }
+
+  .Card button {
+    font-size: 16px;
+    margin: 1rem auto 0;
+    width: 100%;
+  }
+
+  .Card li {
+    font-size: 16px;
+    margin: 0.8rem 0;
+    padding-left: 1rem;
+  }
+
+  .Card li::before {
+    height: 10px;
+    width: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .Card {
+    padding: 1rem;
+    justify-content: space-around;
+  }
+
+  .CardTitleForTablet {
+    width: 190px;
+  }
+
+  .CardTitleForTablet button {
+    padding: 1rem;
+  }
+
+  .CardTitleHeaders h1 {
+    width: 130px;
+  }
+
+  .CardTitle i {
+    font-size: 55px;
+  }
+
+  .Card ul {
+    padding-left: 1.2rem;
+  }
+
+  .Card li {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 500px) {
+  .Card {
+    flex-direction: column;
+  }
+
+  .CardTitleForTablet {
+    display: none;
+  }
+
+  .Card .CardTitle.DisableForTablet {
+    display: flex;
+  }
+
+  .DisableForTablet {
+    display: block;
+  }
+
+  .Card button {
+    margin: 0;
+  }
+}

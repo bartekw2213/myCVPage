@@ -1,0 +1,82 @@
+:root {
+  --dark-blue: #374291;
+  --light-blue: #9bb3ff;
+  --dark-purple: #372051;
+  --light-purple: #883fc0;
+  --dark-white: #ddd;
+  --dark-red: #b71a1a;
+  --yellow: #eea12d;
+  --big-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
+  --button-shadow: 3px 5px 10px rgba(0, 0, 0, 0.7);
+}
+
+.DarkOverlay {
+  position: fixed;
+  z-index: 500;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.App {
+  min-height: 100vh;
+  background: url('./img/background.jpg') top center / cover no-repeat;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 2rem;
+  padding-bottom: 1rem;
+  margin: 0 auto;
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-dark-white {
+  color: #ddd;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button:active,
+button:focus {
+  outline: none;
+}
+
+@media (max-width: 1023px) {
+  h1 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 21px;
+  }
+}

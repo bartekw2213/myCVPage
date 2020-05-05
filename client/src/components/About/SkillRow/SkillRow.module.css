@@ -1,0 +1,15 @@
+.SkillRow {
+  height: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .SkillRow {
+    margin: 2rem 0;
+    height: auto;
+    flex-direction: column;
+  }
+}

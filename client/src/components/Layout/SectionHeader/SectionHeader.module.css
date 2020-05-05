@@ -1,0 +1,40 @@
+.SectionHeader {
+  width: 675px;
+  height: 110px;
+  background-color: var(--yellow);
+  clip-path: polygon(100% 100%, 90% 50%, 100% 0, 0 0, 10% 50%, 0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid var(--dark-red);
+  margin-top: 3rem;
+}
+
+.SectionHeader h1 {
+  text-shadow: var(--big-shadow);
+}
+
+.SectionHeader i {
+  color: var(--dark-red);
+}
+
+@media (max-width: 1023px) {
+  .SectionHeader {
+    width: 480px;
+    height: 90px;
+    border: 5px solid var(--dark-red);
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .SectionHeader {
+    width: 100%;
+    height: 100px;
+  }
+
+  .SectionHeader h1 {
+    width: 70%;
+    text-align: center;
+  }
+}

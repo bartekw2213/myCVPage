@@ -1,0 +1,143 @@
+.Nav {
+  background-color: var(--dark-blue);
+  width: 100%;
+  height: 70px;
+  box-shadow: var(--big-shadow);
+}
+
+.Nav .container {
+  padding-bottom: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Nav .NavLogo {
+  width: 180px;
+}
+
+ul.NavigationList {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+ul.NavigationList li {
+  border-left: 3px solid var(--dark-white);
+  margin-right: 1rem;
+}
+
+ul.NavigationList li a {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+ul.NavigationList li a::after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: var(--dark-white);
+  position: absolute;
+  left: -100%;
+  bottom: 0;
+  z-index: 10;
+  transition: left 0.2s;
+}
+
+ul.NavigationList li a:hover::after,
+ul.NavigationList li a:focus::after,
+ul.NavigationList li a:active::after,
+ul.NavigationList li a.active::after {
+  left: 0;
+}
+
+ul.NavigationList li a i {
+  margin-right: 5px;
+  transition: color 0.2s;
+}
+
+ul.NavigationList li a:hover i,
+ul.NavigationList li a:focus i,
+ul.NavigationList li a:active i,
+ul.NavigationList li a.active i {
+  color: var(--yellow);
+}
+
+.HamburgerMenu {
+  cursor: pointer;
+  display: none;
+  height: 40px;
+  width: 40px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  border: 2px solid var(--dark-white);
+  border-radius: 5px;
+}
+
+.SideBarMenu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  padding: 1rem;
+  background-color: var(--dark-blue);
+  z-index: 1000;
+  box-shadow: var(--big-shadow);
+}
+
+.SideNavLogo {
+  width: 160px;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--dark-red);
+}
+
+@media (max-width: 1023px) {
+  .Nav {
+    height: 55px;
+  }
+
+  .Nav .NavLogo {
+    width: 115px;
+  }
+
+  ul.NavigationList li {
+    font-size: 12px;
+    border-left: 2px solid var(--dark-white);
+  }
+
+  ul.NavigationList li a::after {
+    height: 2px;
+  }
+
+  ul.NavigationList li i {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .Nav ul.NormalMenu {
+    display: none;
+  }
+
+  ul.NavigationList {
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  ul.NavigationList li {
+    margin: 0.5rem 0;
+    font-size: 16px;
+  }
+
+  .HamburgerMenu {
+    display: flex;
+  }
+}

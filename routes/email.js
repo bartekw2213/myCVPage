@@ -7,11 +7,11 @@ const router = express.Router();
 // @desc    Posting an email message
 // @access  Public
 router.post('/', async (req, res) => {
-  const { name, emailAdress, text } = req.body;
+  const { name, email, text } = req.body;
 
   try {
-    sendClientMail(name, emailAdress, text);
-    sendWelcomeMail(name, emailAdress);
+    sendClientMail(name, email, text);
+    sendWelcomeMail(name, email);
     res.send('OK');
   } catch (error) {
     console.error(error);

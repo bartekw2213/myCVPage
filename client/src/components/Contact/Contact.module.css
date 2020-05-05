@@ -1,0 +1,146 @@
+.MessageWindow {
+  width: 100%;
+  display: flex;
+  margin-top: 2rem;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.MessageWindowLeft {
+  background-color: var(--dark-blue);
+  width: 40%;
+  box-shadow: 5px 0 30px rgba(0, 0, 0, 0.8);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MessageWindowLeft img {
+  width: 80%;
+}
+
+.MessageWindowRight {
+  background-color: #f6f6f6;
+  width: 60%;
+  padding: 3rem;
+  color: #000;
+}
+
+.MessageWindowRight h1 {
+  margin-bottom: 1.5rem;
+  padding-left: 2rem;
+}
+
+.FormGroup {
+  color: #969696;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+}
+
+.FormGroup label {
+  padding-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.FormGroup textarea,
+.FormGroup input {
+  background-color: #d8d8d8;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-weight: bold;
+}
+
+.FormGroup textarea {
+  height: 150px;
+  width: 100%;
+}
+
+.MessageInfo {
+  margin: 2rem 0;
+  display: flex;
+}
+
+.MessageInfo .FormGroup {
+  width: 45%;
+}
+
+.MessageInfo .FormGroup:first-child {
+  margin-right: 1rem;
+}
+
+.MessageWindow button {
+  width: 100%;
+  background-color: #ffca7b;
+  font-weight: bold;
+  padding: 1rem;
+  border-radius: 20px;
+  font-size: 24px;
+}
+
+.MessageWindow button i {
+  color: var(--dark-red);
+}
+
+@media (max-width: 767px) {
+  .MessageWindowRight {
+    padding: 1rem 2rem;
+  }
+
+  .MessageWindowRight label {
+    font-size: 12px;
+  }
+
+  .MessageInfo {
+    margin: 1rem 0;
+    flex-direction: column;
+  }
+
+  .MessageInfo .FormGroup {
+    width: 100%;
+  }
+
+  .MessageInfo .FormGroup:first-child {
+    margin-right: 0rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .MessageWindowRight button {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 540px) {
+  .MessageWindowRight h1 {
+    padding-left: 0.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .ContainerForMobile {
+    padding: 0;
+  }
+
+  .MessageWindow {
+    margin: 0;
+    border-radius: 0;
+    height: calc(100vh - 55px);
+    box-sizing: border-box;
+  }
+
+  .MessageWindowLeft {
+    display: none;
+  }
+
+  .MessageWindowRight {
+    width: 100%;
+  }
+
+  .MessageWindowRight textarea {
+    height: 40vh;
+  }
+}
